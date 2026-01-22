@@ -1,0 +1,8 @@
+# 注意：此项目包含Python和R代码
+# Python依赖请使用 requirements.txt 安装
+# R包请在R环境中单独安装
+# 
+# 推荐使用conda环境管理，参考 environment.yml
+#
+# 本文件保留用于IDE支持，但不用于包管理
+

@@ -1,0 +1,48 @@
+# Visium HD Spatial Transcriptomics Analysis Pipeline
+# 
+# 注意：这是一个混合Python和R的项目
+# Python依赖安装后，还需要在R环境中安装相关R包
+#
+# 1. 首先创建conda环境（推荐）：
+#    conda env create -f environment.yml
+#
+# 2. 或仅安装Python依赖：
+#    pip install -r requirements.txt
+#
+# 3. R包安装（在R环境中执行）：
+#    install.packages(c(
+#        "Seurat", "Signac", " monocle3", "tidyverse",
+#        "patchwork", "ggpubr", "circlize"
+#    ))
+#
+# ============================================
+
+# Core Python Dependencies
+numpy>=1.24.0
+pandas>=2.0.0
+scanpy>=1.9.0
+spatialdata>=0.1.0
+spatialdata-plot>=0.2.0
+spatialdata-io>=0.1.0
+geopandas>=0.13.0
+shapely>=2.0.0
+
+# Differential Expression Analysis
+pydeseq2>=0.4.0
+
+# Batch Correction & Integration
+geosketch>=1.0.0
+scvi-tools>=0.20.0  # 可选，用于scVI批次校正
+
+# Visualization
+matplotlib>=3.7.0
+seaborn>=0.12.0
+
+# Data Handling & Utilities
+pydantic>=2.0.0
+pyyaml>=6.0
+tqdm>=4.65.0
+
+# Testing & Development (可选)
+pytest>=7.0.0
+pytest-cov>=4.0.0
